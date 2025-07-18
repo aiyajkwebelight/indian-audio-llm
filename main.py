@@ -5,10 +5,13 @@ import tempfile
 import os
 import base64
 from litellm import completion
+from dotenv import load_dotenv
+
+load_dotenv() 
 
 # Set your API keys here
-SARVAM_API_KEY = "sk_cyrm2deh_L38GbWHUVuAeZOS2AWa0szNA"
-GEMINI_API_KEY = "AIzaSyCNLrmZIqub975oAHNmbnbCm4EqY3fG_8Y"
+SARVAM_API_KEY = os.getenv("SARVAM_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 LITELLM_MODEL = "gemini/gemini-2.0-flash-lite"
 
 

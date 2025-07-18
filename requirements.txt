@@ -2,3 +2,4 @@ streamlit
 litellm
 requests
 python-multipart
+python-dotenv
